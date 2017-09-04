@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bootstrap</title>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="imgs/bootstrap.ico" rel="shortcut icon"/>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+$(function (){
+	$('#myCarousel').carousel({
+		interval:2000
+	});
+});
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">欢迎您</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse navbar-left" role="navigation" id="list">
+			<ul class="nav navbar-nav">
+				<li><a href="#">网站首页</a></li>
+				<li><a href="#">动画人物</a></li>
+				<li><a href="#">简笔人物</a></li>
+				<li><a href="#">漫画人物</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					联系我们<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">团队介绍</a></li>
+						<li><a href="#">给我留言</a></li>
+						<li><a href="#">与我联系</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</nav>
+
+<div class="banner">
+	<div class="container">
+		<div id="myCarousel" class="carousel slide">
+    
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>   
+		
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="imgs/banner/1.png" alt="First slide">
+					<div class="carousel-caption">帅气~~</div>
+				</div>
+				<div class="item">
+					<img src="imgs/banner/2.jpg" alt="Second slide">
+					<div class="carousel-caption">可爱~~</div>
+				</div>
+				<div class="item">
+					<img src="imgs/banner/3.jpg" alt="Third slide">
+					<div class="carousel-caption">有生机~~~</div>
+				</div>
+				<div class="item">
+					<img src="imgs/banner/4.jpg" alt="Second slide">
+					<div class="carousel-caption">优雅~~</div>
+				</div>
+				<div class="item">
+					<img src="imgs/banner/5.jpg" alt="Third slide">
+					<div class="carousel-caption">little love~~~</div>
+				</div>
+			</div>
+
+			<a class="carousel-control left" href="#myCarousel" 
+				data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" 
+				data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="contact">
+	<div class="container">
+		<ul>
+			<li>
+				<a class="conmunity" href="" title="问答社区">社区：问答社区 | </a>
+			</li>
+			<li>
+				<a class="weibo" href="" title="微博">微博：周小曼的微博</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="container recommend">
+	<div class="title">
+	  <h2>推荐</h2>
+	  <p>欢迎你，希望你可以度过美好的一天~~~~</p>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+			  <a href="">
+				<img src="imgs/content/1.png">
+			  </a>
+			  <div class="caption">
+				<h3>
+					<a href="">AAAAAAAAAA<br><small>by @zmx</small></a>
+				</h3>
+				<p>******************************************************************************************</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+			  <a href="">
+				<img src="imgs/content/2.png">
+			  </a>
+			  <div class="caption">
+				<h3>
+					<a href="">BBBBBBBBBB<br><small>by @zmx</small></a>
+				</h3>
+				<p>***********************</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/3.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">CCCCCCCCC<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/4.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">DDDDDDDDDD<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/5.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">EEEEEEEEEE<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/6.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">FFFFFFFFFF<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/7.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">GGGGGGGGGG<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/8.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">HHHHHHHHHH<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/9.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">IIIIIIIIII<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/10.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">JJJJJJJJJ<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/11.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">KKKKKKKKK<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 ">
+			<div class="thumbnail">
+				  <a href="">
+					<img src="imgs/content/12.png">
+				  </a>
+				  <div class="caption">
+					<h3>
+						<a href="">LLLLLLLLLLL<br><small>by @zmx</small></a>
+					</h3>
+					<p>***********************</p>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="wrap">
+			<div class="title">
+				<h4><span>W</span>ebSite</h4>
+				<p>本网站本着本网站本着本网站本着本网站本着本网站本着本网站本着本网站本着</p>
+			</div>
+			<div class="about">
+				<dl>
+					<dt>关于</dt>
+					<dd><a href="">关于我们</a></dd>
+					<dd><a href="">广告合作</a></dd>
+					<dd><a href="">友情链接</a></dd>
+					<dd><a href="">招牌</a></dd>
+				</dl>
+				<dl>
+					<dt>联系方式</dt>
+					<dd><a href="">电子邮件</a></dd>
+					<dd><a href="">新浪微博</a></dd>
+				</dl>
+				<dl>
+					<dt>更多网站</dt>
+					<dd><a href="">自学网</a></dd>
+					<dd><a href="">**网</a></dd>
+				</dl>
+				<dl>
+					<dt>赞助商</dt>
+					<dd><a href="">哈哈没有</a></dd>
+				</dl>
+			</div>
+		
+		</div>
+		<p class="lastMess">京公网安备00897687 | @709976789</p>
+	</div>
+</div>
+</body>
+</html>
